@@ -10,15 +10,8 @@
         devShell."x86_64-linux" = pkgs.mkShell {
             name = "stick-packer-dev";
             packages = with pkgs; [
-				python312
-            ] ++ (with python312Packages; [
-				aiohttp
-				yarl
-				pillow
-				telethon
-				cryptg
-				python-magic
-			]);
+				conda
+			];
         };
     };
 }
